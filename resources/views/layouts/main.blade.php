@@ -9,7 +9,6 @@
     <title>Каталог статей</title>
 </head>
 <body class="bg-black">  
-    
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body sticky-top"   style="top: 0px;"data-bs-theme="dark">
         <div class="container-fluid container-xxl "  >
             <div class="navbar-brand" style="margin-right: 20px; font-size: 23px;" href="#">aainBlog</div>
