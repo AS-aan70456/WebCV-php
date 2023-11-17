@@ -124,6 +124,7 @@
 }
 .experience-item{
     margin: 20px 5px;
+    
 }
 .experience-subtitle{
     font-weight: 500;
@@ -141,4 +142,43 @@
 .aboutme-data{
     padding-left: 9px;
     margin-bottom:20px;
+}
+
+/* posts */
+.PostList{
+
+
+}
+
+.PostList-Item{
+    margin: 20px;
+    width: 30%;
+    background-color: RGB(255, 255, 255, 0.01);
+}
+
+.PostList-Item-data{
+    margin-left: 120px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.PostList-Item-img{
+    
+}
+
+.PostList-Item-title{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.PostList-Item-description{
+    margin-left: 5px;
+    margin-top: 15px;
+    
+}
+.PostList-Item-datatime{
+    position: absolute;
+    right: 10px;
+    top: -10px;
 }
