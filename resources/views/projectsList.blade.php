@@ -1,9 +1,55 @@
 @extends('layouts.main')
-
-
 @section('content')
-gfdgfdg
+
+<div class="projectList">
+    <div class="projectList-item border border-top-0 border-bottom-0 border-white rounded">
+        <img class="projectList-Item-img"/>
+        <div class="projectList-item-data">
+            <div class="projectList-item-title">Project name</div>
+            <div class="projectList-item-dascription"><footer class="blockquote-footer">Project decription</footer></div>
+            <div class="projectList-item-datatime">2007.10.07</div>
+            <div class="projectList-item-like"><i class="bi bi-star"> 3</i></div>
+        </div>
+    
+    </div>
+    <div class="projectList-item border border-top-0 border-bottom-0 border-white rounded">
+        <img class="projectList-Item-img"/>
+        <div class="projectList-item-data">
+            <div class="projectList-item-title">Project name</div>
+            <div class="projectList-item-dascription"><footer class="blockquote-footer">Project decription</footer></div>
+            <div class="projectList-item-datatime">2007.10.07</div>
+            <div class="projectList-item-like"><i class="bi bi-star"> 3</i></div>
+        </div>
+    
+    </div>
+    <div class="projectList-item border border-top-0 border-bottom-0 border-white rounded">
+        <img class="projectList-Item-img"/>
+        <div class="projectList-item-data">
+            <div class="projectList-item-title">Project name</div>
+            <div class="projectList-item-dascription"><footer class="blockquote-footer">Project decription</footer></div>
+            <div class="projectList-item-datatime">2007.10.07</div>
+            <div class="projectList-item-like"><i class="bi bi-star"> 3</i></div>
+        </div>
+    
+    </div>
+    <div class="projectList-item border border-top-0 border-bottom-0 border-white rounded">
+        <img class="projectList-Item-img"/>
+        <div class="projectList-item-data">
+            <div class="projectList-item-title">Project name</div>
+            <div class="projectList-item-dascription"><footer class="blockquote-footer">Project decription</footer></div>
+            <div class="projectList-item-datatime">2007.10.07</div>
+            <div class="projectList-item-like"><i class="bi bi-star"> 3</i> </div>
+        </div>
+    
+    </div>
+
+</div>
+
+
 @endsection
+
+
+
 
 @section('nav')
 <li class="nav-item">

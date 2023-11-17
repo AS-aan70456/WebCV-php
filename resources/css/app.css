@@ -182,3 +182,51 @@
     right: 10px;
     top: -10px;
 }
+/*   project */
+
+.projectList{
+
+    
+}
+
+.projectList-Item-img{
+    position:absolute;
+}
+
+.projectList-item{
+    position: relative;
+    width: 85%;
+    margin:auto;
+    margin-top:20px;
+    height: 150px;
+    padding: 10px;
+    background-color: RGB(255, 255, 255, 0.01);
+}
+.projectList-item-data{
+    margin-left:200px;
+}
+
+.projectList-item-datatime{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 17px;
+}
+
+.projectList-item-title{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.projectList-item-like{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.bi-star{
+    font-size: 17px;
+    font-weight: 40;
+    color: white;
+}
