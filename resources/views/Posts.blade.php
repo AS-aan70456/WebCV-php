@@ -1,78 +1,18 @@
 @extends('layouts.main')
 @section('content')
 <div class="PostList d-flex flex-wrap">
-    <div class="border border-top-0 border-bottom-0 border-white rounded PostList-Item">
-        <img class="PostList-Item-img"/>
-        <div class="PostList-Item-data">
-            <div class="PostList-Item-title">Post</div>
-            <div class="PostList-Item-description"><footer class="blockquote-footer">description</footer></div>
-            <div class="PostList-Item-datatime">2007.10.07</div>
+    @foreach($posts as $post)
+        <div class="border border-top-0 border-bottom-0 border-white rounded PostList-Item">
+            <a class="projectLink" href="post?id={{$post->id}}">
+            <img class="PostList-Item-img"/>
+                <div class="PostList-Item-data">
+                <div class="PostList-Item-title">{{$post->title}}</div>
+                <div class="PostList-Item-description"><footer class="blockquote-footer">{{$post->subtitle}}</footer></div>
+                <div class="PostList-Item-datatime">{{$post->created_at}}</div>
+            </div>
+            </a>
         </div>
-
-    
-    </div>
-
-    <div class="border border-top-0 border-bottom-0 border-white rounded PostList-Item">
-        <img class="PostList-Item-img"/>
-        <div class="PostList-Item-data">
-            <div class="PostList-Item-title">Post</div>
-            <div class="PostList-Item-description"><footer class="blockquote-footer">description</footer></div>
-            <div class="PostList-Item-datatime">2007.10.07</div>
-        </div>
-
-    
-    </div>
-    <div class="border border-top-0 border-bottom-0 border-white rounded PostList-Item">
-        <img class="PostList-Item-img"/>
-        <div class="PostList-Item-data">
-            <div class="PostList-Item-title">Post</div>
-            <div class="PostList-Item-description"><footer class="blockquote-footer">description</footer></div>
-            <div class="PostList-Item-datatime">2007.10.07</div>
-        </div>
-
-    
-    </div>
-    <div class="border border-top-0 border-bottom-0 border-white rounded PostList-Item">
-        <img class="PostList-Item-img"/>
-        <div class="PostList-Item-data">
-            <div class="PostList-Item-title">Post</div>
-            <div class="PostList-Item-description"><footer class="blockquote-footer">description</footer></div>
-            <div class="PostList-Item-datatime">2007.10.07</div>
-        </div>
-
-    
-    </div>
-    <div class="border border-top-0 border-bottom-0 border-white rounded PostList-Item">
-        <img class="PostList-Item-img"/>
-        <div class="PostList-Item-data">
-            <div class="PostList-Item-title">Post</div>
-            <div class="PostList-Item-description"><footer class="blockquote-footer">description</footer></div>
-            <div class="PostList-Item-datatime">2007.10.07</div>
-        </div>
-
-    
-    </div>
-    <div class="border border-top-0 border-bottom-0 border-white rounded PostList-Item">
-        <img class="PostList-Item-img"/>
-        <div class="PostList-Item-data">
-            <div class="PostList-Item-title">Post</div>
-            <div class="PostList-Item-description"><footer class="blockquote-footer">description</footer></div>
-            <div class="PostList-Item-datatime">2007.10.07</div>
-        </div>
-
-    
-    </div>
-    <div class="border border-top-0 border-bottom-0 border-white rounded PostList-Item">
-        <img class="PostList-Item-img"/>
-        <div class="PostList-Item-data">
-            <div class="PostList-Item-title">Post</div>
-            <div class="PostList-Item-description"><footer class="blockquote-footer">description</footer></div>
-            <div class="PostList-Item-datatime">2007.10.07</div>
-        </div>
-
-    
-    </div>
-
+    @endforeach
 
 
 </div>

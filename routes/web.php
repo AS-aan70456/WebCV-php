@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/','App\Http\Controllers\HomeController@index')->name('home');
 Route::get('/home','App\Http\Controllers\HomeController@index')->name('home');
 Route::get('/posts','App\Http\Controllers\ArticalController@index')->name('posts');
+Route::get('/post','App\Http\Controllers\ArticalController@currentArtical');
 Route::get('/projects','App\Http\Controllers\ProjectController@index')->name('projects');
 Route::get('/CV','App\Http\Controllers\CVControlle@index')->name('CV');
 Route::get('/about','App\Http\Controllers\AboutController@index')->name('about');
