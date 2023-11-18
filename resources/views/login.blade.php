@@ -1,8 +1,8 @@
 @extends('layouts.main')
 @section('content')
-
-
-
+<br>
+<div class="text-center"><h1>Login</h1></div>
+<div class="aut-container">
 <form>
 
     <div class="form-group">
@@ -20,7 +20,14 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
-
+</div>
+  <div class="text-center">
+    <br>
+    <br>
+    <br>
+    <br>
+    You do not have an account? <a href="register">Register<a>
+  </div>
 @endsection
 
 @section('nav')
@@ -39,6 +46,9 @@
   </li>
   <li class="nav-item">
       <a class="nav-link " href="CV">CV</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link "  href="Account">Account</a>
   </li>
 @endsection
 

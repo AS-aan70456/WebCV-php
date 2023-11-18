@@ -44,4 +44,7 @@
 <li class="nav-item">
     <a class="nav-link " href="CV">CV</a>
 </li>
+<li class="nav-item">
+  <a class="nav-link "  href="Account">Account</a>
+</li>
 @endsection

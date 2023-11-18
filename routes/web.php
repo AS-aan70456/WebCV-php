@@ -27,3 +27,22 @@ Route::get('/acount/login','App\Http\Controllers\HomeController@index')->name('l
 
 
 Route::get('/','App\Http\Controllers\HomeController@index')->name('Home.index');
+
+
+Route::name(".user")->group(function(){
+
+    Route::get('/Account','App\Http\Controllers\AccountController@index')->middleware('auth')->name('account');
+
+    Route::get('/Account','App\Http\Controllers\AccountController@login')->name('login');
+    Route::get('/Account','App\Http\Controllers\AccountController@register')->name('register');
+
+    Route::get('/login','App\Http\Controllers\AccountController@login');
+    Route::get('/register','App\Http\Controllers\AccountController@register');
+
+    Route::post('/login_post','App\Http\Controllers\AccountController@login_post');
+    Route::post('/register_post','App\Http\Controllers\AccountController@register_post');
+
+});
+
+
+
