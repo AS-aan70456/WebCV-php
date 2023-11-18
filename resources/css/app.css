@@ -152,7 +152,7 @@
 
 .PostList-Item{
     margin: 20px;
-    width: 30%;
+    width: 40%;
     background-color: RGB(255, 255, 255, 0.01);
 }
 
@@ -238,3 +238,25 @@ a {
 
   }
 
+.artical{
+    position: relative;
+    margin-left: 25px;
+}
+
+.artical-data{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.artical-title{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-top:20px;
+}
+
+.artical-subtitle{
+    font-size: 22px;
+    margin-bottom: 50px;
+}

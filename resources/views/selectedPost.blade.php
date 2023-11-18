@@ -1,10 +1,16 @@
 @extends('layouts.main')
 @section('content')
-<blockquote class="blockquote text-center HomeTitle">
-    <p class="mb-0">{{$post->title}}</p>
-    <br>
-    <div style="margin: 10px 150px;"><footer class="blockquote-footer">{{$post->subtitle}}</footer></div>
-  </blockquote>
+
+<div class="artical">
+
+  <div class="artical-data">{{$post->created_at}}</div>
+  <div class="artical-title">{{$post->title}}</div>
+  <div class="artical-subtitle"><footer class="blockquote-footer">{{$post->subtitle}}</footer></div>
+  <div class="artical-likes">{{$post->likes}}</div>
+  <div class="artical-category">{{$post->category_id}}</div>
+  <div class="artical-context block">{{$post->content}}</div>
+
+</div>
 
 @endsection
 
