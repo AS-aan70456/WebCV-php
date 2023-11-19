@@ -9,12 +9,15 @@ use App\Models\User;
 class AccountController extends Controller
 {
     public function index(){
-        return view('accuont');
+
+        $user = Auth::user();
+
+        return view('accuont', compact('user'));
     }
 
     public function login(){
         if(Auth::check()){
-            return redirect(route("user.Account"));
+            return redirect('/Account');
         }
 
         return view('login');
@@ -22,14 +25,14 @@ class AccountController extends Controller
 
     public function register(){
         if(Auth::check()){
-            return redirect(route("user.Account"));
+            return redirect('/Account');
         }
         return view('register');
     }
 
     public function login_post(Request $request){
         if(Auth::check()){
-            return redirect(route("user.Account"));
+            return redirect('/Account');
         }
 
         return view('register');
@@ -37,14 +40,23 @@ class AccountController extends Controller
 
     public function register_post(Request $request){
         
-        return $request;
+        $arr = [ 
+            'Name' => $request->Name,
+            'Password' => $request->Password,
+            'Email' => $request->Email,
+            'remember_token' => $request->_token,
+
+        ];
+        
+        
 
 
-        $user = User::create( $request);
+
+        $user = User::create($arr);
         if($user){
             Auth::login($user);
            
-            return redirect(route('user.Account'));
+            return redirect('/Account');
         }
         
         return redirect(reute('user.login'))->withErrors(['formError' => 'Error']);

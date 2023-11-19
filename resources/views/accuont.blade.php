@@ -1,6 +1,7 @@
 @extends('layouts.main')
 @section('content')
-    This is only registered users
+    This is only registered users<br>
+    {{$user->Name}}
 @endsection
 
 @section('nav')

@@ -33,8 +33,8 @@ Route::name(".user")->group(function(){
 
     Route::get('/Account','App\Http\Controllers\AccountController@index')->middleware('auth')->name('account');
 
-    Route::get('/Account','App\Http\Controllers\AccountController@login')->name('login');
-    Route::get('/Account','App\Http\Controllers\AccountController@register')->name('register');
+    Route::get('/login','App\Http\Controllers\AccountController@login')->name('login');
+    Route::get('/register','App\Http\Controllers\AccountController@register')->name('register');
 
     Route::get('/login','App\Http\Controllers\AccountController@login');
     Route::get('/register','App\Http\Controllers\AccountController@register');
