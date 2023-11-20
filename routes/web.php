@@ -29,7 +29,7 @@ Route::get('/acount/login','App\Http\Controllers\HomeController@index')->name('l
 Route::get('/','App\Http\Controllers\HomeController@index')->name('Home.index');
 
 
-Route::name(".user")->group(function(){
+Route::name("user.")->group(function(){
 
     Route::get('/Account','App\Http\Controllers\AccountController@index')->middleware('auth')->name('account');
 
@@ -41,7 +41,7 @@ Route::name(".user")->group(function(){
 
     Route::post('/login_post','App\Http\Controllers\AccountController@login_post');
     Route::post('/register_post','App\Http\Controllers\AccountController@register_post');
-
+    Route::post('login', [ 'as' => 'login', 'uses' => 'LoginController@do']);
 });
 
 
